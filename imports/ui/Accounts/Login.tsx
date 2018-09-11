@@ -5,14 +5,10 @@ import './accounts.css';
 
 import { FormComponentProps } from 'antd/lib/form';
 
-interface UserFormProps extends FormComponentProps {
-  userName: String;
-  password: string;
-}
 
 const FormItem = Form.Item;
 
-class NormalLoginForm extends React.Component<UserFormProps, any> {
+class NormalLoginForm extends React.Component<any> {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
