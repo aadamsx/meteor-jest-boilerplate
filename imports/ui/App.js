@@ -1,9 +1,10 @@
 import React from 'react'
+import Login from './Accounts/Login'
 
 const App = () => (
-    <div>
-        Hello There I am from React
-    </div>
+    <>
+        <Login/>
+    </>
 )
 
 export default App
