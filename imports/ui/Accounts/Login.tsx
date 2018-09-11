@@ -1,21 +1,28 @@
-import React from 'react'
+import * as React from 'react'
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
 import { Col, Row } from 'react-flexbox-grid'
 import './accounts.css';
 
+import { FormComponentProps } from 'antd/lib/form';
+
+interface UserFormProps extends FormComponentProps {
+  userName: String;
+  password: string;
+}
+
 const FormItem = Form.Item;
 
-class NormalLoginForm extends React.Component {
+class NormalLoginForm extends React.Component<UserFormProps, any> {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        console.log('Received values of form: ', values);
+        // console.log('Received values of form: ', values);
       }
     });
   }
 
-  render() {
+ public render(): React.ReactNode {
     const { getFieldDecorator } = this.props.form;
     return (
         <Row>
@@ -56,7 +63,7 @@ class NormalLoginForm extends React.Component {
                 </Row>
             </Col>
         </Row>
-         );
+        )
   }
 }
 
