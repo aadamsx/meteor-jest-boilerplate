@@ -1,10 +1,9 @@
 {
-  "name": "CompareIt",
+  "name": "meteor-react-typescript-boilerplate",
   "private": true,
   "scripts": {
     "start": "meteor run",
     "test": "jest ",
-    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
     "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
   "dependencies": {
