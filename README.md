@@ -20,6 +20,7 @@ if you don't have meteor run the script below
 after that clone the repo  
 
 `git clone https://github.com/OlivierJM/meteor-typescript-jest-boilerplate.git MyProject`  
+
 `cd MyProject`  
 
 install dependencies  
@@ -37,6 +38,5 @@ run it
 # To-do  
 - [ ] Make a branch that just uses Javascript not Typescript  
 - [ ] Make a branch that uses meteor's default bundler   
-- [ ] Mercury
 
 
