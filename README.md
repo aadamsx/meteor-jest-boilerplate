@@ -34,9 +34,8 @@ run it
 
 `npm run test`  
 
-# To-do  
+# To-do 
 - [ ] Make a branch that just uses Javascript not Typescript  
-- [ ] Make a branch that uses meteor's default bundler   
-- [ ] Mercury
+- [ ] Make a branch that uses meteor's default bundler
 
 

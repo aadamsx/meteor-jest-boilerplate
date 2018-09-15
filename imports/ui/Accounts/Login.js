@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-class LoginPage extends React.Component<any> {
- public render(): React.ReactNode {
+class LoginPage extends React.Component{
+render() {
     return (
         <React.Fragment>
             <h2>
