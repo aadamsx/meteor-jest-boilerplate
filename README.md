@@ -1,4 +1,4 @@
-# meteor-typescript-jest
+# meteor-jest
 
 A boilerplate configured with Typescript and Jest
 
