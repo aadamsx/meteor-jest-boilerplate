@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const meteorExternals = require('webpack-meteor-externals');
 
 const clientConfig = {
-  entry: './client/main.tsx',
+  entry: './client/main.jsx',
   module: {
     rules: [{
         test: /\.(ts|tsx|js|jsx)$/,
@@ -35,7 +35,7 @@ const clientConfig = {
 
 const serverConfig = {
   entry: [
-    './server/main.ts'
+    './server/main.js'
   ],
   target: 'node',
   devServer: {
