@@ -6,9 +6,9 @@ const clientConfig = {
   entry: './client/main.jsx',
   module: {
     rules: [{
-        test: /\.(ts|tsx|js|jsx)$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['ts-loader']
+        use: ['babel-loader']
       },
       {
         test: /\.css$/,
@@ -23,7 +23,7 @@ const clientConfig = {
     new webpack.HotModuleReplacementPlugin()
   ],
   resolve: {
-    extensions: ['*', '.js', '.jsx', '.tsx', '.ts']
+    extensions: ['*', '.js', '.jsx']
   },
   externals: [
     meteorExternals()
