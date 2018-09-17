@@ -5,45 +5,40 @@ const meteorExternals = require('webpack-meteor-externals');
 const clientConfig = {
   entry: './client/main.jsx',
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        use: ['babel-loader'],
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      }
-    ]
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './client/main.html'
+      template: './client/main.html',
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
   ],
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ['*', '.js', '.jsx'],
   },
-  externals: [
-    meteorExternals()
-  ],
+  externals: [meteorExternals()],
   devServer: {
-    hot: true
-  }
+    hot: true,
+  },
 };
 
 const serverConfig = {
-  entry: [
-    './server/main.js'
-  ],
+  entry: ['./server/main.js'],
   target: 'node',
   devServer: {
-    hot: true
+    hot: true,
   },
-  externals: [
-    meteorExternals()
-  ]
+  externals: [meteorExternals()],
 };
 
 module.exports = [clientConfig, serverConfig];
