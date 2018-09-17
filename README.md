@@ -1,6 +1,6 @@
 # meteor-jest
 
-[![Build Status](https://travis-ci.org/OlivierJM/meteor-jest-boilerplate.svg?branch=Javascript-boilerplate)](https://travis-ci.org/OlivierJM/meteor-jest-boilerplate)
+[![Build Status](https://travis-ci.org/OlivierJM/meteor-jest-boilerplate.svg?branch=Javascript-boilerplate)](https://travis-ci.org/OlivierJM/meteor-jest-boilerplate) [![Greenkeeper badge](https://badges.greenkeeper.io/OlivierJM/meteor-jest-boilerplate.svg)](https://greenkeeper.io/)
 
 A boilerplate configured with Typescript and Jest
 
