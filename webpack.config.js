@@ -1,6 +1,6 @@
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const meteorExternals = require('webpack-meteor-externals');
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const meteorExternals = require('webpack-meteor-externals')
 
 const clientConfig = {
   entry: './client/main.jsx',
@@ -30,7 +30,7 @@ const clientConfig = {
   devServer: {
     hot: true,
   },
-};
+}
 
 const serverConfig = {
   entry: ['./server/main.js'],
@@ -39,6 +39,6 @@ const serverConfig = {
     hot: true,
   },
   externals: [meteorExternals()],
-};
+}
 
-module.exports = [clientConfig, serverConfig];
+module.exports = [clientConfig, serverConfig]

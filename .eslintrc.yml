@@ -26,7 +26,7 @@ env:
 
 rules:
   # overwrite some rules  
-  semi: 1
+  semi: [error, never]
   no-unexpected-multiline: 2
   no-throw-literal: 0
   no-underscore-dangle: 0
@@ -72,7 +72,9 @@ globals:
   FS: false
   require: false
   # packages
-  moment: false 
+  moment: false
+  it: false
+  expect: false
 settings:
   import/core-modules: [meteor/meteor]
   import/resolver: meteor
