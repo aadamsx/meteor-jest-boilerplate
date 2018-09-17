@@ -2,9 +2,10 @@
 
 A boilerplate configured with Typescript and Jest
 
-# what is included 
+# what is included
+
 - Meteor
-- Typescript
+- Typescript []
 - React
 - Jest
 - Webpack
@@ -13,29 +14,32 @@ All the above are pre-configured
 
 # Development and usage
 
-if you don't have meteor run the script below  
+if you don't have meteor run the script below
 
 `curl https://install.meteor.com/ | sh`
 
-after that clone the repo  
+after that clone the repo
 
 `git clone https://github.com/OlivierJM/meteor-typescript-jest-boilerplate.git MyProject`  
-`cd MyProject`  
+`cd MyProject`
 
-install dependencies  
+install dependencies
 
-`meteor npm install`   
+`meteor npm install`
 
-run it  
+run it
 
-`meteor` or `npm run start`  
+`meteor` or `npm run start`
 
-# Testing  
+# Testing
 
-`npm run test`  
+`npm run test`
 
-# To-do 
-- [ ] Make a branch that just uses Javascript not Typescript  
+# Linting
+
+`npm run lint`
+
+# To-do
+
+- [ ] Make a branch that just uses Javascript not Typescript
 - [ ] Make a branch that uses meteor's default bundler
-
-
