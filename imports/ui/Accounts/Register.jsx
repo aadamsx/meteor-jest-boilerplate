@@ -1,11 +1,11 @@
-import * as React from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 const RegisterPage = () => (
   <React.Fragment>
     <h2>Register Page</h2>
     <button>
-      <Link to="login">Register</Link>
+      <Link to="login">Login</Link>
     </button>
   </React.Fragment>
 )
