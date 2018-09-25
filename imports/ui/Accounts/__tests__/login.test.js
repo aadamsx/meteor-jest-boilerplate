@@ -1,9 +1,12 @@
-import * as React from 'react'
-import ReactDOM from 'react-dom'
-// eslint-disable-next-line
-import Login from '../Login'
+import React from 'react'
+// import { Router } from 'react-router-dom'
+import { render } from 'react-testing-library'
+import Login from '../Login' // eslint-disable-line
 
-it('renders without crashing', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<Login />, div)
+describe('loginPage', () => {
+  it('renders properly', () => {
+    const { getByText } = render(<Login />)
+    const title = getByText('Login Page')
+    expect(title.textContent).toBe('Login Page')
+  })
 })
