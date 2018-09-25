@@ -75,6 +75,7 @@ globals:
   moment: false
   it: false
   expect: false
+  describe: false
 settings:
   import/core-modules: [meteor/meteor]
   import/resolver: meteor
