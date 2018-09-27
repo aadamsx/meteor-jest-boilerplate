@@ -18,7 +18,7 @@
   "dependencies": {
     "@babel/runtime": "7.0.0-beta.55",
     "@types/react": "^16.4.14",
-    "@types/react-dom": "^16.0.7",
+    "@types/react-dom": "^16.0.8",
     "babel-plugin-import": "^1.8.0",
     "bcrypt": "^3.0.0",
     "indexof": "0.0.1",
